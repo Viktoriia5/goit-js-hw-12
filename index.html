@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-5b791d57.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-d4e246e7.css">
+  </head>
+  <body>
+    <section lass="gallery-cards">
+      <div class="container">
+        <form class="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="search images..."
+          />
+          <button type="submit">Search</button>
+        </form>
+        <ul class="gallery"></ul>
+        <div class="wraper-loader is-hidden"><p class="loader"></p></div>
+      </div>
+    </section>
+    
+  </body>
+</html>
