@@ -1,4 +1,5 @@
 import axios from 'axios';
+export const galleryElement = document.querySelector('.gallery');
 
 export function createMarkup(arr) {
   return arr
@@ -26,4 +27,12 @@ export function createMarkup(arr) {
   `
     )
     .join('');
+}
+
+export function showEndOfCollectionMessage() {
+  const endMessage = document.createElement('p');
+  endMessage.classList.add('end-message');
+  endMessage.textContent =
+    "We're sorry, but you've reached the end of search results.";
+  galleryElement.insertAdjacentElement('afterend', endMessage);
 }

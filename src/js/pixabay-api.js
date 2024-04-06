@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export async function getPhotos(q, currentPage) {
+export async function getPhotos(q, currentPage, per_page) {
   const API_KEY = '43160524-9a6063b2023a0abfcd049074a';
   const BASE_URL = 'https://pixabay.com/api/';
   const params = new URLSearchParams({
@@ -10,7 +10,7 @@ export async function getPhotos(q, currentPage) {
     orientation: 'horizontal',
     safesearch: true,
     page: currentPage,
-    per_page: 15,
+    per_page: per_page,
   });
   try {
     const res = await axios.get(BASE_URL, { params });
