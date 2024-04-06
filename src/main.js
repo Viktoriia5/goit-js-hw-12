@@ -1,5 +1,6 @@
 import { getPhotos } from './js/pixabay-api';
 import { createMarkup } from './js/render-functions';
+import axios from 'axios';
 // Описаний у документації
 import iziToast from 'izitoast';
 // Додатковий імпорт стилів

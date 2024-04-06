@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export function createMarkup(arr) {
   return arr
     .map(
